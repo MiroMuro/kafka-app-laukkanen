@@ -1,0 +1,29 @@
+{
+  "name": "kafka-app-laukkanen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:deleteTopics":"node ./admin/deleteTopics.js",
+    "start:createTopics":"node ./admin/createTopics.js",
+    "start:producer":"node ./producer/index.js",
+    "start:consumer": "node ./consumer/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ToriGrilli69/kafka-app-laukkanen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ToriGrilli69/kafka-app-laukkanen/issues"
+  },
+  "homepage": "https://github.com/ToriGrilli69/kafka-app-laukkanen#readme",
+  "dependencies": {
+    "kafkajs": "^2.2.4",
+    "uuid": "^9.0.0"
+  }
+  
+}
